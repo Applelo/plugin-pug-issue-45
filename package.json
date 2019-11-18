@@ -1,0 +1,39 @@
+{
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "not OperaMini all"
+  ],
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "proseWrap": "always",
+    "overrides": [
+      {
+        "files": "*.pug",
+        "singleQuote": true,
+        "options": {
+          "parser": "pug"
+        }
+      },
+      {
+        "files": "*.php",
+        "options": {
+          "parser": "php",
+          "singleQuote": true,
+          "tabWidth": "4",
+          "trailingCommaPHP": "all"
+        }
+      }
+    ]
+  },
+  "devDependencies": {
+    "@prettier/plugin-pug": "^1.0.10",
+    "prettier": "^1.19.1"
+  }
+}
